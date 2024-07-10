@@ -16,7 +16,7 @@
 
 // #define LiDAR_VOA_TYPE LiDAR_VOA_NONE
 //  LiDAR_VOA_TYPE should be defined to choose which Lidar to use in object avoidance.
-//  Note that Downward LiDAR will always be enbaled for precision landing. - JHCha @221222
+//  Note that Downward LiDAR will always be enbaled for precision landing.
 
 #define LiDAR_SYSTEM_ID 0x01
 #define LiDAR_COMPONENT_ID 158
@@ -103,7 +103,7 @@ enum class SF45_parsing_state
     CRCReceived
 };
 
-// You may refer here for specific commands: https://support.lightware.co.za/sf45b/#/commands - JHCha at 221206
+// You may refer here for specific commands: https://support.lightware.co.za/sf45b/#/commands
 enum class SF45_command
 {
     ProductName = 0,
