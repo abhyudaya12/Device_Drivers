@@ -454,7 +454,7 @@ bool SF45Parser::push_data_to_parser(const uint8_t& data)
             uint16_t receivedCRC = payloadBuffer.at(bufferSize - 2) | (payloadBuffer.at(bufferSize - 1) << 8);
             if (calculatedCRC == receivedCRC)
             {
-                //This is the final state of the parsing - JHCha at 230102.
+                //This is the final state of the parsing.
 
                 SF45_command command = translate_SF45_command_code(payloadBuffer.at(0));
                 if (command != SF45_command::None)
